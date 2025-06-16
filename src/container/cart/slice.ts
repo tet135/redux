@@ -19,7 +19,7 @@ export const cartSlice = createSlice({
     reducers: {
         add: (state, action: PayloadAction<{ name: string }> ) => {
             state.list.push({
-                id: Math.floor(Math.random() * 1000),
+                id: Math.floor(Math.random() * 10000),
                 name: action.payload.name,
                 amount: 1,
             });
